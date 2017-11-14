@@ -12,6 +12,7 @@
 		501C0A751FB8FE9A004858F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501C0A731FB8FE9A004858F7 /* Main.storyboard */; };
 		501C0A771FB8FE9A004858F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501C0A761FB8FE9A004858F7 /* Assets.xcassets */; };
 		501C0A7A1FB8FE9A004858F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501C0A781FB8FE9A004858F7 /* LaunchScreen.storyboard */; };
+		502823881FBB24D600E70C5A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502823871FBB24D600E70C5A /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		501C0A761FB8FE9A004858F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501C0A791FB8FE9A004858F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501C0A7B1FB8FE9A004858F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502823871FBB24D600E70C5A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				501C0A6F1FB8FE9A004858F7 /* AppDelegate.swift */,
 				501C0A711FB8FE9A004858F7 /* ViewController.swift */,
 				501C0A731FB8FE9A004858F7 /* Main.storyboard */,
+				502823871FBB24D600E70C5A /* AboutViewController.swift */,
 				501C0A761FB8FE9A004858F7 /* Assets.xcassets */,
 				501C0A781FB8FE9A004858F7 /* LaunchScreen.storyboard */,
 				501C0A7B1FB8FE9A004858F7 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502823881FBB24D600E70C5A /* AboutViewController.swift in Sources */,
 				501C0A721FB8FE9A004858F7 /* ViewController.swift in Sources */,
 				501C0A701FB8FE9A004858F7 /* AppDelegate.swift in Sources */,
 			);
