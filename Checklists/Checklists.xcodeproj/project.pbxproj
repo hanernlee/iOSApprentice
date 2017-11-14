@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		502823981FBB365D00E70C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502823971FBB365D00E70C5A /* AppDelegate.swift */; };
-		5028239A1FBB365D00E70C5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502823991FBB365D00E70C5A /* ViewController.swift */; };
-		5028239D1FBB365D00E70C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5028239B1FBB365D00E70C5A /* Main.storyboard */; };
-		5028239F1FBB365D00E70C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5028239E1FBB365D00E70C5A /* Assets.xcassets */; };
-		502823A21FBB365D00E70C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502823A01FBB365D00E70C5A /* LaunchScreen.storyboard */; };
+		502823B81FBBA12500E70C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502823B71FBBA12500E70C5A /* AppDelegate.swift */; };
+		502823BA1FBBA12500E70C5A /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502823B91FBBA12500E70C5A /* ChecklistViewController.swift */; };
+		502823BD1FBBA12500E70C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502823BB1FBBA12500E70C5A /* Main.storyboard */; };
+		502823BF1FBBA12500E70C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502823BE1FBBA12500E70C5A /* Assets.xcassets */; };
+		502823C21FBBA12500E70C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502823C01FBBA12500E70C5A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		502823941FBB365D00E70C5A /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		502823971FBB365D00E70C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		502823991FBB365D00E70C5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5028239C1FBB365D00E70C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5028239E1FBB365D00E70C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		502823A11FBB365D00E70C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		502823A31FBB365D00E70C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502823B41FBBA12500E70C5A /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		502823B71FBBA12500E70C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		502823B91FBBA12500E70C5A /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		502823BC1FBBA12500E70C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		502823BE1FBBA12500E70C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		502823C11FBBA12500E70C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		502823C31FBBA12500E70C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		502823911FBB365D00E70C5A /* Frameworks */ = {
+		502823B11FBBA12500E70C5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5028238B1FBB365D00E70C5A = {
+		502823AB1FBBA12500E70C5A = {
 			isa = PBXGroup;
 			children = (
-				502823961FBB365D00E70C5A /* Checklists */,
-				502823951FBB365D00E70C5A /* Products */,
+				502823B61FBBA12500E70C5A /* Checklists */,
+				502823B51FBBA12500E70C5A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		502823951FBB365D00E70C5A /* Products */ = {
+		502823B51FBBA12500E70C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				502823941FBB365D00E70C5A /* Checklists.app */,
+				502823B41FBBA12500E70C5A /* Checklists.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		502823961FBB365D00E70C5A /* Checklists */ = {
+		502823B61FBBA12500E70C5A /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
-				502823971FBB365D00E70C5A /* AppDelegate.swift */,
-				502823991FBB365D00E70C5A /* ViewController.swift */,
-				5028239B1FBB365D00E70C5A /* Main.storyboard */,
-				5028239E1FBB365D00E70C5A /* Assets.xcassets */,
-				502823A01FBB365D00E70C5A /* LaunchScreen.storyboard */,
-				502823A31FBB365D00E70C5A /* Info.plist */,
+				502823B71FBBA12500E70C5A /* AppDelegate.swift */,
+				502823B91FBBA12500E70C5A /* ChecklistViewController.swift */,
+				502823BB1FBBA12500E70C5A /* Main.storyboard */,
+				502823BE1FBBA12500E70C5A /* Assets.xcassets */,
+				502823C01FBBA12500E70C5A /* LaunchScreen.storyboard */,
+				502823C31FBBA12500E70C5A /* Info.plist */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -67,13 +67,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		502823931FBB365D00E70C5A /* Checklists */ = {
+		502823B31FBBA12500E70C5A /* Checklists */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 502823A61FBB365D00E70C5A /* Build configuration list for PBXNativeTarget "Checklists" */;
+			buildConfigurationList = 502823C61FBBA12500E70C5A /* Build configuration list for PBXNativeTarget "Checklists" */;
 			buildPhases = (
-				502823901FBB365D00E70C5A /* Sources */,
-				502823911FBB365D00E70C5A /* Frameworks */,
-				502823921FBB365D00E70C5A /* Resources */,
+				502823B01FBBA12500E70C5A /* Sources */,
+				502823B11FBBA12500E70C5A /* Frameworks */,
+				502823B21FBBA12500E70C5A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,26 +81,26 @@
 			);
 			name = Checklists;
 			productName = Checklists;
-			productReference = 502823941FBB365D00E70C5A /* Checklists.app */;
+			productReference = 502823B41FBBA12500E70C5A /* Checklists.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5028238C1FBB365D00E70C5A /* Project object */ = {
+		502823AC1FBBA12500E70C5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Christopher Lee";
 				TargetAttributes = {
-					502823931FBB365D00E70C5A = {
+					502823B31FBBA12500E70C5A = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 5028238F1FBB365D00E70C5A /* Build configuration list for PBXProject "Checklists" */;
+			buildConfigurationList = 502823AF1FBBA12500E70C5A /* Build configuration list for PBXProject "Checklists" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,54 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 5028238B1FBB365D00E70C5A;
-			productRefGroup = 502823951FBB365D00E70C5A /* Products */;
+			mainGroup = 502823AB1FBBA12500E70C5A;
+			productRefGroup = 502823B51FBBA12500E70C5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				502823931FBB365D00E70C5A /* Checklists */,
+				502823B31FBBA12500E70C5A /* Checklists */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		502823921FBB365D00E70C5A /* Resources */ = {
+		502823B21FBBA12500E70C5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				502823A21FBB365D00E70C5A /* LaunchScreen.storyboard in Resources */,
-				5028239F1FBB365D00E70C5A /* Assets.xcassets in Resources */,
-				5028239D1FBB365D00E70C5A /* Main.storyboard in Resources */,
+				502823C21FBBA12500E70C5A /* LaunchScreen.storyboard in Resources */,
+				502823BF1FBBA12500E70C5A /* Assets.xcassets in Resources */,
+				502823BD1FBBA12500E70C5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		502823901FBB365D00E70C5A /* Sources */ = {
+		502823B01FBBA12500E70C5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5028239A1FBB365D00E70C5A /* ViewController.swift in Sources */,
-				502823981FBB365D00E70C5A /* AppDelegate.swift in Sources */,
+				502823BA1FBBA12500E70C5A /* ChecklistViewController.swift in Sources */,
+				502823B81FBBA12500E70C5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5028239B1FBB365D00E70C5A /* Main.storyboard */ = {
+		502823BB1FBBA12500E70C5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5028239C1FBB365D00E70C5A /* Base */,
+				502823BC1FBBA12500E70C5A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		502823A01FBB365D00E70C5A /* LaunchScreen.storyboard */ = {
+		502823C01FBBA12500E70C5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				502823A11FBB365D00E70C5A /* Base */,
+				502823C11FBBA12500E70C5A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		502823A41FBB365D00E70C5A /* Debug */ = {
+		502823C41FBBA12500E70C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		502823A51FBB365D00E70C5A /* Release */ = {
+		502823C51FBBA12500E70C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +270,7 @@
 			};
 			name = Release;
 		};
-		502823A71FBB365D00E70C5A /* Debug */ = {
+		502823C71FBBA12500E70C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -285,7 +285,7 @@
 			};
 			name = Debug;
 		};
-		502823A81FBB365D00E70C5A /* Release */ = {
+		502823C81FBBA12500E70C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -303,25 +303,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5028238F1FBB365D00E70C5A /* Build configuration list for PBXProject "Checklists" */ = {
+		502823AF1FBBA12500E70C5A /* Build configuration list for PBXProject "Checklists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				502823A41FBB365D00E70C5A /* Debug */,
-				502823A51FBB365D00E70C5A /* Release */,
+				502823C41FBBA12500E70C5A /* Debug */,
+				502823C51FBBA12500E70C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		502823A61FBB365D00E70C5A /* Build configuration list for PBXNativeTarget "Checklists" */ = {
+		502823C61FBBA12500E70C5A /* Build configuration list for PBXNativeTarget "Checklists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				502823A71FBB365D00E70C5A /* Debug */,
-				502823A81FBB365D00E70C5A /* Release */,
+				502823C71FBBA12500E70C5A /* Debug */,
+				502823C81FBBA12500E70C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5028238C1FBB365D00E70C5A /* Project object */;
+	rootObject = 502823AC1FBBA12500E70C5A /* Project object */;
 }
