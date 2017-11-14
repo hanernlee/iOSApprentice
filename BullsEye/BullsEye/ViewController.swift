@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
 
@@ -69,6 +70,12 @@ class ViewController: UIViewController {
         score = 0
         round = 0
         startNewRound()
+        
+        let transition = CATransition()
+        transition.type = kCATransition
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        view.layer.add(transition, forKey: nil)
     }
     
     @IBAction func showAlert() {
