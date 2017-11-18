@@ -25,15 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         let center = UNUserNotificationCenter.current()
         center.delegate = self
-
-        center.requestAuthorization(options: [.alert, .sound]) {
-            granted, error in
-            if granted {
-                print("We have permission")
-            } else {
-                print("Permission denied")
-            }
-        }
         
         return true
     }
@@ -69,6 +60,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     // MARK:- User Notification Delegates
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         print("Received local notification \(notification)")
+        
+        let message = notification.request.content.body
+        
+        let topWindow: UIWindow = UIWindow(frame: UIScreen.main.bounds)
+        topWindow.rootViewController = UIViewController()
+        topWindow.windowLevel = UIWindowLevelAlert + 1
+        let alert: UIAlertController =  UIAlertController(title: "Reminder", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "confirm"), style: .cancel, handler: {(action: UIAlertAction) -> Void in
+            topWindow.isHidden = true
+        }))
+        topWindow.makeKeyAndVisible()
+        topWindow.rootViewController?.present(alert, animated: true, completion: nil)
     }
 }
 

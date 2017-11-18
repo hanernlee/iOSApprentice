@@ -303,6 +303,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QHz-jv-yIV">
                                                     <rect key="frame" x="308" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="shouldRemindToggled:" destination="Ewu-HW-9kO" eventType="valueChanged" id="zbd-hP-xGg"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -360,7 +363,7 @@
                         <outlet property="datePickerCell" destination="Jbd-tE-7gc" id="1jq-dk-xaI"/>
                         <outlet property="doneBarButton" destination="waz-tA-V16" id="vSg-J3-Iuy"/>
                         <outlet property="dueDateLabel" destination="QP3-gr-qX3" id="gJ8-UG-ZDE"/>
-                        <outlet property="shouldRemindSwitch" destination="QHz-jv-yIV" id="SEI-QQ-NDW"/>
+                        <outlet property="shouldRemindSwitch" destination="QHz-jv-yIV" id="cPq-tw-RWA"/>
                         <outlet property="textField" destination="cUR-g5-iW2" id="o4a-Ki-aWd"/>
                     </connections>
                 </tableViewController>

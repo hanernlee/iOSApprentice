@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 protocol ItemDetailViewControllerDelegate: class {
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController)
@@ -113,6 +114,17 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var shouldRemindSwitch: UISwitch!
     @IBOutlet weak var dueDateLabel: UILabel!
     
+    @IBAction func shouldRemindToggled(_ switchControl: UISwitch) {
+        textField.resignFirstResponder()
+        
+        if switchControl.isOn {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound]) {
+                granted, error in
+                // do nothing
+            }
+        }
+    }
     
     @IBAction func cancel() {
         delegate?.itemDetailViewControllerDidCancel(self)
@@ -124,6 +136,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             
             item.shouldRemind = shouldRemindSwitch.isOn
             item.dueDate = dueDate
+            item.scheduleNotification()
             
             delegate?.itemDetailViewController(self, didFinishEditing: item)
         } else {
@@ -133,7 +146,8 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             
             item.shouldRemind = shouldRemindSwitch.isOn
             item.dueDate = dueDate
-            
+            item.scheduleNotification()
+
             delegate?.itemDetailViewController(self, didFinishAdding: item)
         }
     }
@@ -180,18 +194,18 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     func hideDatePicker() {
         if datePickerIsVisible {
             datePickerIsVisible = false
+
+            let indexPathDateRow = IndexPath(row: 1, section: 1)
+            let indexPathDatePicker = IndexPath(row: 2, section: 1)
+
+            if let cell = tableView.cellForRow(at: indexPathDateRow) {
+                cell.detailTextLabel!.textColor = .black
+            }
+
+            tableView.beginUpdates()
+            tableView.reloadRows(at: [indexPathDateRow], with: .none)
+            tableView.deleteRows(at: [indexPathDatePicker], with: .fade)
+            tableView.endUpdates()
         }
-        
-        let indexPathDateRow = IndexPath(row: 1, section: 1)
-        let indexPathDatePicker = IndexPath(row: 2, section: 1)
-        
-        if let cell = tableView.cellForRow(at: indexPathDateRow) {
-            cell.detailTextLabel!.textColor = .black
-        }
-        
-        tableView.beginUpdates()
-        tableView.reloadRows(at: [indexPathDateRow], with: .none)
-        tableView.deleteRows(at: [indexPathDatePicker], with: .fade)
-        tableView.endUpdates()
     }
 }
