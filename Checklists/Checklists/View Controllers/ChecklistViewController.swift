@@ -37,7 +37,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     // MARK: TableViews
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(checklist.items.count)
         return checklist.items.count
     }
     
