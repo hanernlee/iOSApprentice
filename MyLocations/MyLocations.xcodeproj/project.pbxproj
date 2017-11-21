@@ -13,6 +13,8 @@
 		50162ACF1FC0812D0095FAAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50162ACE1FC0812D0095FAAB /* Assets.xcassets */; };
 		50162AD21FC0812D0095FAAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50162AD01FC0812D0095FAAB /* LaunchScreen.storyboard */; };
 		5066E61D1FC40DA300E21A50 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E61C1FC40DA300E21A50 /* LocationCell.swift */; };
+		5066E6201FC4526100E21A50 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5066E61F1FC4526100E21A50 /* MapKit.framework */; };
+		5066E6221FC452AF00E21A50 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E6211FC452AF00E21A50 /* MapViewController.swift */; };
 		50F87C201FC19233000FBF83 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F87C1F1FC19233000FBF83 /* LocationDetailsViewController.swift */; };
 		50F87C221FC1A5B8000FBF83 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F87C211FC1A5B8000FBF83 /* CategoryPickerViewController.swift */; };
 		50F87C241FC1B612000FBF83 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F87C231FC1B612000FBF83 /* HudView.swift */; };
@@ -32,6 +34,8 @@
 		50162AD11FC0812D0095FAAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50162AD31FC0812D0095FAAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5066E61C1FC40DA300E21A50 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		5066E61F1FC4526100E21A50 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5066E6211FC452AF00E21A50 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		50F87C1F1FC19233000FBF83 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		50F87C211FC1A5B8000FBF83 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		50F87C231FC1B612000FBF83 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5066E6201FC4526100E21A50 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,7 @@
 			children = (
 				50162AC41FC0812D0095FAAB /* MyLocations */,
 				50162AC31FC0812D0095FAAB /* Products */,
+				5066E61E1FC4526100E21A50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +84,7 @@
 				50162AC71FC0812D0095FAAB /* CurrentLocationViewController.swift */,
 				50162ACB1FC0812D0095FAAB /* Main.storyboard */,
 				50F87C231FC1B612000FBF83 /* HudView.swift */,
+				5066E6211FC452AF00E21A50 /* MapViewController.swift */,
 				5066E61C1FC40DA300E21A50 /* LocationCell.swift */,
 				50F87C2E1FC38E8F000FBF83 /* LocationsViewController.swift */,
 				50F87C1F1FC19233000FBF83 /* LocationDetailsViewController.swift */,
@@ -89,6 +96,14 @@
 				50162AD31FC0812D0095FAAB /* Info.plist */,
 			);
 			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		5066E61E1FC4526100E21A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5066E61F1FC4526100E21A50 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +139,11 @@
 					50162AC11FC0812D0095FAAB = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -170,6 +190,7 @@
 				50F87C2D1FC1C9D5000FBF83 /* Location+CoreDataProperties.swift in Sources */,
 				50F87C261FC1C5BB000FBF83 /* Functions.swift in Sources */,
 				5066E61D1FC40DA300E21A50 /* LocationCell.swift in Sources */,
+				5066E6221FC452AF00E21A50 /* MapViewController.swift in Sources */,
 				50162AC61FC0812D0095FAAB /* AppDelegate.swift in Sources */,
 				50F87C2C1FC1C9D5000FBF83 /* Location+CoreDataClass.swift in Sources */,
 				50F87C221FC1A5B8000FBF83 /* CategoryPickerViewController.swift in Sources */,
