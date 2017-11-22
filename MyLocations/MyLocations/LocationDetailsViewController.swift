@@ -165,12 +165,15 @@ class LocationDetailsViewController: UITableViewController {
     // MARK:- Table View Delegates
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         switch(indexPath.section, indexPath.row ) {
             case (0, 0):
                 return 88
             case(1, _):
-                return imageView.isHidden ? 44 : 280
+                if imageView.image != nil  {
+                    return imageView.isHidden ? 44 : 280
+                } else {
+                    return 44
+                }
             case(2, 2):
                 addressLabel.frame.size = CGSize(width: view.bounds.size.width - 120, height: 10000)
                 addressLabel.sizeToFit()
