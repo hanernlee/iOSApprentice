@@ -31,12 +31,6 @@ class CategoryPickerViewController: UITableViewController {
         if let index = categories.index(of: selectedCategoryName) {
             selectedIndexPath = IndexPath(row: index, section: 0)
         }
-//        for i in 0..<categories.count {
-//            if categories[i] == selectedCategoryName {
-//                selectedIndexPath = IndexPath(row: i, section: 0)
-//                break
-//            }
-//        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -63,6 +57,10 @@ class CategoryPickerViewController: UITableViewController {
         } else {
             cell.accessoryType = .none
         }
+        
+        let selection = UIView(frame: CGRect.zero)
+        selection.backgroundColor = UIColor(white: 1.0, alpha: 0.2)
+        cell.selectedBackgroundView = selection
         
         return cell
     }
