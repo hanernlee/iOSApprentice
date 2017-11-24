@@ -10,4 +10,5 @@ import Foundation
 
 struct TableViewCellIdentifiers {
     static let searchResultCell = "SearchResultCell"
+    static let nothingFoundCell = "NothingFoundCell"
 }
