@@ -14,6 +14,7 @@ class LandscapeViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     var searchResults = [SearchResult]()
+    private var downloads = [URLSessionDownloadTask]()
     
     private var firstTime = true
     
@@ -45,7 +46,35 @@ class LandscapeViewController: UIViewController {
         }
     }
     
+    deinit {
+        print("Deinit \(self)")
+        
+        for task in downloads {
+            task.cancel()
+        }
+    }
+    
     // MARK:- Private Methods
+    private func downloadImage(for searchResult: SearchResult, andPlaceOn button: UIButton) {
+        if let url = URL(string: searchResult.imageSmall) {
+            let task = URLSession.shared.downloadTask(with: url) {
+                [weak button] url, response, error in
+                
+                if error == nil, let url = url,
+                    let data = try? Data(contentsOf: url),
+                    let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            if let button = button {
+                                button.setImage(image, for: .normal)
+                            }
+                        }
+                }
+            }
+            task.resume()
+            downloads.append(task)
+        }
+    }
+    
     private func tileButtons(_ searchResults: [SearchResult]) {
         var columnsPerPage = 5
         var rowsPerPage = 3
@@ -85,10 +114,9 @@ class LandscapeViewController: UIViewController {
         var x = marginX
         
         for (index, result) in searchResults.enumerated() {
-            let button = UIButton(type: .system)
-            button.backgroundColor = UIColor.white
-            button.setTitle("\(index)", for: .normal)
-            
+            let button = UIButton(type: .custom)
+            downloadImage(for: result, andPlaceOn: button)
+            button.setBackgroundImage(UIImage(named: "LandscapeButton"), for: .normal)
             button.frame = CGRect(x: x + paddingHorz, y: marginY + CGFloat(row)*itemHeight + paddingVert, width: buttonWidth, height: buttonHeight)
             
             scrollView.addSubview(button)
@@ -129,7 +157,7 @@ extension LandscapeViewController: UIScrollViewDelegate {
             delay: 0,
             options: [.curveEaseInOut],
             animations: {
-                self.scrollView.contentOffSet = CGPoint(x: self.scrollView.bounds.size.width * CGFloat(sender.currentPage), y: 0)
+                self.scrollView.contentOffset = CGPoint(x: self.scrollView.bounds.size.width * CGFloat(sender.currentPage), y: 0)
             },
             completion: nil
         )
