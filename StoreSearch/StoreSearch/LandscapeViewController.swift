@@ -13,7 +13,7 @@ class LandscapeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var searchResults = [SearchResult]()
+    var search: Search!
     private var downloads = [URLSessionDownloadTask]()
     
     private var firstTime = true
@@ -42,7 +42,7 @@ class LandscapeViewController: UIViewController {
         
         if firstTime {
             firstTime = false
-            tileButtons(searchResults)
+            tileButtons(search.searchResults)
         }
     }
     
@@ -113,7 +113,7 @@ class LandscapeViewController: UIViewController {
         var column = 0
         var x = marginX
         
-        for (index, result) in searchResults.enumerated() {
+        for (_ , result) in searchResults.enumerated() {
             let button = UIButton(type: .custom)
             downloadImage(for: result, andPlaceOn: button)
             button.setBackgroundImage(UIImage(named: "LandscapeButton"), for: .normal)
