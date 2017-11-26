@@ -20,6 +20,9 @@
 		5066E6781FCA660F00E21A50 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E6771FCA660F00E21A50 /* UIImageView+DownloadImage.swift */; };
 		5066E67A1FCA6E1800E21A50 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E6791FCA6E1800E21A50 /* DetailViewController.swift */; };
 		5066E67C1FCA711500E21A50 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E67B1FCA711500E21A50 /* DimmingPresentationController.swift */; };
+		5066E67E1FCA858E00E21A50 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E67D1FCA858E00E21A50 /* GradientView.swift */; };
+		5066E6801FCA8D4100E21A50 /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E67F1FCA8D4100E21A50 /* BounceAnimationController.swift */; };
+		5066E6821FCA951600E21A50 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E6811FCA951600E21A50 /* SlideOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		5066E6771FCA660F00E21A50 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		5066E6791FCA6E1800E21A50 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5066E67B1FCA711500E21A50 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
+		5066E67D1FCA858E00E21A50 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5066E67F1FCA8D4100E21A50 /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
+		5066E6811FCA951600E21A50 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 				5066E6571FC6E91E00E21A50 /* AppDelegate.swift */,
 				5066E6731FC9775D00E21A50 /* LoadingCell.xib */,
 				5066E6791FCA6E1800E21A50 /* DetailViewController.swift */,
+				5066E67F1FCA8D4100E21A50 /* BounceAnimationController.swift */,
+				5066E6811FCA951600E21A50 /* SlideOutAnimationController.swift */,
 				5066E67B1FCA711500E21A50 /* DimmingPresentationController.swift */,
 				5066E6591FC6E91E00E21A50 /* SearchViewController.swift */,
 				5066E66D1FC70BAA00E21A50 /* SearchResultCell.swift */,
@@ -82,6 +90,7 @@
 				5066E6771FCA660F00E21A50 /* UIImageView+DownloadImage.swift */,
 				5066E66F1FC70D4E00E21A50 /* TableViewCellIdentifiers.swift */,
 				5066E65B1FC6E91E00E21A50 /* Main.storyboard */,
+				5066E67D1FCA858E00E21A50 /* GradientView.swift */,
 				5066E65E1FC6E91E00E21A50 /* Assets.xcassets */,
 				5066E6631FC6E91E00E21A50 /* Info.plist */,
 			);
@@ -166,10 +175,13 @@
 				5066E66A1FC6FFE600E21A50 /* SearchResult.swift in Sources */,
 				5066E6781FCA660F00E21A50 /* UIImageView+DownloadImage.swift in Sources */,
 				5066E67C1FCA711500E21A50 /* DimmingPresentationController.swift in Sources */,
+				5066E6801FCA8D4100E21A50 /* BounceAnimationController.swift in Sources */,
 				5066E6701FC70D4E00E21A50 /* TableViewCellIdentifiers.swift in Sources */,
 				5066E66E1FC70BAA00E21A50 /* SearchResultCell.swift in Sources */,
 				5066E6581FC6E91E00E21A50 /* AppDelegate.swift in Sources */,
+				5066E6821FCA951600E21A50 /* SlideOutAnimationController.swift in Sources */,
 				5066E67A1FCA6E1800E21A50 /* DetailViewController.swift in Sources */,
+				5066E67E1FCA858E00E21A50 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
