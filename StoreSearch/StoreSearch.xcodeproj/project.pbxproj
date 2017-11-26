@@ -17,6 +17,7 @@
 		5066E6701FC70D4E00E21A50 /* TableViewCellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E66F1FC70D4E00E21A50 /* TableViewCellIdentifiers.swift */; };
 		5066E6721FC795B000E21A50 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5066E6711FC795B000E21A50 /* NothingFoundCell.xib */; };
 		5066E6741FC9775D00E21A50 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5066E6731FC9775D00E21A50 /* LoadingCell.xib */; };
+		5066E6781FCA660F00E21A50 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066E6771FCA660F00E21A50 /* UIImageView+DownloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5066E66F1FC70D4E00E21A50 /* TableViewCellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellIdentifiers.swift; sourceTree = "<group>"; };
 		5066E6711FC795B000E21A50 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		5066E6731FC9775D00E21A50 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		5066E6771FCA660F00E21A50 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				5066E6571FC6E91E00E21A50 /* AppDelegate.swift */,
+				5066E6771FCA660F00E21A50 /* UIImageView+DownloadImage.swift */,
 				5066E6591FC6E91E00E21A50 /* SearchViewController.swift */,
 				5066E6731FC9775D00E21A50 /* LoadingCell.xib */,
 				5066E6711FC795B000E21A50 /* NothingFoundCell.xib */,
@@ -155,6 +158,7 @@
 			files = (
 				5066E65A1FC6E91E00E21A50 /* SearchViewController.swift in Sources */,
 				5066E66A1FC6FFE600E21A50 /* SearchResult.swift in Sources */,
+				5066E6781FCA660F00E21A50 /* UIImageView+DownloadImage.swift in Sources */,
 				5066E6701FC70D4E00E21A50 /* TableViewCellIdentifiers.swift in Sources */,
 				5066E66E1FC70BAA00E21A50 /* SearchResultCell.swift in Sources */,
 				5066E6581FC6E91E00E21A50 /* AppDelegate.swift in Sources */,
