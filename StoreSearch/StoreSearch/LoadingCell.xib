@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoadingCell" id="byq-kh-Pl4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="byq-kh-Pl4" id="irE-EM-KLN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-5P-DcJ">
+                        <rect key="frame" x="95" y="9.5" width="130" height="60"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6Oj-4D-Glp">
+                                <rect key="frame" x="90" y="20" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cx-Hw-gkn">
+                                <rect key="frame" x="20" y="20" width="68" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5cx-Hw-gkn" firstAttribute="top" secondItem="sHY-5P-DcJ" secondAttribute="top" constant="20" id="1Md-Mo-p6g"/>
+                            <constraint firstItem="5cx-Hw-gkn" firstAttribute="leading" secondItem="sHY-5P-DcJ" secondAttribute="leading" constant="20" id="4VK-La-O1s"/>
+                            <constraint firstAttribute="bottom" secondItem="5cx-Hw-gkn" secondAttribute="bottom" constant="20" id="5nO-as-Wf2"/>
+                            <constraint firstItem="6Oj-4D-Glp" firstAttribute="top" secondItem="sHY-5P-DcJ" secondAttribute="top" constant="20" id="6aF-YR-BEf"/>
+                            <constraint firstItem="6Oj-4D-Glp" firstAttribute="leading" secondItem="5cx-Hw-gkn" secondAttribute="trailing" constant="2" id="8hC-4O-aqd"/>
+                            <constraint firstAttribute="trailing" secondItem="6Oj-4D-Glp" secondAttribute="trailing" constant="20" id="T6L-dJ-Iv5"/>
+                            <constraint firstAttribute="bottom" secondItem="6Oj-4D-Glp" secondAttribute="bottom" constant="20" id="zzL-g5-ymU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sHY-5P-DcJ" firstAttribute="centerY" secondItem="irE-EM-KLN" secondAttribute="centerY" id="F1M-Xe-Qjv"/>
+                    <constraint firstItem="sHY-5P-DcJ" firstAttribute="centerX" secondItem="irE-EM-KLN" secondAttribute="centerX" id="weZ-dk-CAb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-205" y="97"/>
+        </tableViewCell>
+    </objects>
+</document>
