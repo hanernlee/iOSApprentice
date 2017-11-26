@@ -33,13 +33,37 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="dYd-Ca-dhx"/>
                                 </connections>
                             </searchBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc8-2y-kgB">
+                                <rect key="frame" x="0.0" y="76" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="kdm-w1-PsJ">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Mxv-QU-k9I">
+                                            <rect key="frame" x="8" y="7.5" width="304" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sdr-wu-7RE"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Fc8-2y-kgB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HUI-x1-FJh"/>
                             <constraint firstItem="qLS-88-qYp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZBz-fo-gie"/>
+                            <constraint firstItem="Fc8-2y-kgB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a8H-ld-j75"/>
                             <constraint firstItem="qLS-88-qYp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bi1-CY-e0N"/>
                             <constraint firstItem="qLS-88-qYp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d4V-cR-nUe"/>
                             <constraint firstItem="Oih-Tq-Vnb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j82-F5-EqU"/>
+                            <constraint firstItem="Fc8-2y-kgB" firstAttribute="top" secondItem="Oih-Tq-Vnb" secondAttribute="bottom" id="utA-p1-Zeu"/>
                             <constraint firstItem="qLS-88-qYp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vR0-Wz-5pv"/>
                             <constraint firstItem="Oih-Tq-Vnb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vWj-Xe-S1G"/>
                             <constraint firstItem="Oih-Tq-Vnb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y4s-8u-ZgJ"/>
@@ -48,6 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="Oih-Tq-Vnb" id="Fls-IP-amZ"/>
+                        <outlet property="segmentedControl" destination="Mxv-QU-k9I" id="UwN-Mg-s2h"/>
                         <outlet property="tableView" destination="qLS-88-qYp" id="cDK-Vs-Pa1"/>
                     </connections>
                 </viewController>
